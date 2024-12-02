@@ -1,0 +1,11 @@
+.dark-icon,
+.light-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.theme-switch {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}

@@ -1,0 +1,16 @@
+.dark {
+  .dark-icon {
+    display: none;
+  }
+}
+
+.light {
+  .light-icon {
+    display: none;
+  }
+}
+
+body {
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(white, black);
+}
