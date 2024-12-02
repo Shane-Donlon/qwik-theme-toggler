@@ -1,20 +1,24 @@
 import { $, component$, useStylesScoped$ } from "@builder.io/qwik";
 import styles from "./style.css?inline";
-
 export const ThemeSwitch = component$(() => {
   useStylesScoped$(styles);
   const handleOnClick = $(() => {
     const theme = document.documentElement.className;
+    const colorSchemeMeta = document.head.querySelector(
+      'meta[name="color-scheme"]'
+    ) as HTMLMetaElement | null;
     if (theme === "light") {
       document.documentElement.className = "dark";
       localStorage.setItem("theme", "dark");
-      document.head.querySelector('meta[name="color-scheme"]').content =
-        "dark only";
+      if (colorSchemeMeta) {
+        colorSchemeMeta.content = "dark only";
+      }
     } else {
       document.documentElement.className = "light";
       localStorage.setItem("theme", "light");
-      document.head.querySelector('meta[name="color-scheme"]').content =
-        "light only";
+      if (colorSchemeMeta) {
+        colorSchemeMeta.content = "light only";
+      }
     }
   });
 
