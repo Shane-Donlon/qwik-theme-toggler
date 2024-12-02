@@ -1,4 +1,8 @@
-# Qwik City App ⚡️
+# live site url
+[https://qwik-theme-toggler-6ajv.vercel.app/](https://qwik-theme-toggler-6ajv.vercel.app/)
+
+
+## Qwik City App ⚡️
 
 - [Qwik Docs](https://qwik.dev/)
 - [Discord](https://qwik.dev/chat)
@@ -7,6 +11,8 @@
 - [Vite](https://vitejs.dev/)
 
 ---
+
+
 
 ## Project Structure
 
